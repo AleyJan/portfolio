@@ -8,6 +8,28 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        roboto:["var(--roboto)"]
+      },
+      animation:{
+        blob : "blob 4s infinite"
+      },
+      keyframes:{
+        blob:{
+          "0%":{
+            tranform : "translate(0px,0px) scale(1)"
+          },
+          "33%":{
+            tranform : "translate(30px,-50px) scale(1.1)"
+          },
+          "66%":{
+            tranform : "translate(-20px, 20px) scale(0.9)"
+          },
+          "100%":{
+            tranform : "translate(0px, 0px) scale(1)"
+          }
+        }
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
