@@ -4,8 +4,8 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <main id='Contact'>
-        <div className='h-full w-full pr-20 bg-gray-900'>
+    <main >
+        <div className='grid  max-w-full max-h-full  md:h-full md:w-full md:pr-20 bg-gray-900'>
                     <div className='text-white font-bold text-2xl p-10'>
                     Pleasure !  to hear from YOU
                 <div className='text-gray-500 text-1xl p-10'>
@@ -14,10 +14,10 @@ const Contact = () => {
                 THANKS !
                 </div>
                     </div>
-            <div className='flex justify-center'>
-                    <div className='flex space-x-5 pr-40 items-center '>
+            <div className='grid grid-cols-1 md:flex justify-center'>
+                    <div className='flex space-x-5 pl-10 md:pr-40 items-center '>
                 <span>
-                <a className="text-blue-400 hover:text-blue-600" aria-label="Visit TrendyMinds LinkedIn" href="/in/ali-jan-23a6b8280/" target="_blank">
+                <a className="text-blue-400 hover:text-blue-600" aria-label="Visit TrendyMinds LinkedIn" href="www.linkedin.com/in/ali-jan-23a6b8280" target="_blank">
                     <svg className='h-8 inline-block'
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
             <path fill="currentColor"
@@ -37,12 +37,12 @@ const Contact = () => {
                 </span>
                     </div> 
                     <div className='p-8 w-10 '>
-                <form action="portfolio.next.js">
+                <form action="/Contact">
                     <div className='p-1 text-gray-700'>
                     Name: <input className='bg-transparent bg-clip-content border-2 p-1 rounded-md' type="text" placeholder='Imran khan'/>
                     </div>
                     <div className='p-1 text-gray-700'>
-                    Email: <input className='bg-transparent bg-clip-content border-2 px-3 rounded-md' type="text" placeholder='someone@something.com ' />
+                    Email: <input className='bg-transparent bg-clip-content border-2 px-3 rounded-md' type="text" placeholder='abc@something.com ' />
                     </div>
                     <div className='p-1 text-gray-700'>
                     Message: <br /> <textarea className='bg-transparent bg-clip-content border-2 p-1 rounded-md' name="mymsg" id="1" placeholder='Your precious words...' cols={30} rows={10}></textarea>
